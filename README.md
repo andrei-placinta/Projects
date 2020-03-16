@@ -1,1 +1,1 @@
-# Laboratoare TP
+# Teme Laboratoare TP
