@@ -1,33 +1,15 @@
 /*
-1. Sa se scrie un program care citeste de la tastura "N" numere naturale. 
-Pentru fiecare numar se va determina forma lui binara, 
+1. Sa se scrie un program care citeste de la tastura "N" numere naturale.
+Pentru fiecare numar se va determina forma lui binara,
 se va calcula inversul binar ,
 iar mai apoi se va afisa numarul zecimal calculat din inversul binar.
-Ex: 
+Ex:
 27
-0001 1011 
+0001 1011
 1110 0100
-228 
+228
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// RESTRICTII : Acest program accepta valori din sfera [0,65535]
 #include <stdio.h>          // biblioteca pentru functii intrare-iesire
 #include <stdlib.h>         // pentru functia system("pause");
 #include <math.h>           // pentru functii matematice , cum ar fi functia putere pow
@@ -40,6 +22,8 @@ int main()
     {
         printf("\n");
         scanf("%d", &v[i]);
+        if (v[i] < 0)
+            continue;
         invers = 0;
         if (v[i] <= 255)
             k = 7;
