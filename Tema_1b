@@ -1,0 +1,31 @@
+//Căutarea binară.
+
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+int v[100],i,n,mij,x;
+printf("\nDati numarul de elemente: ");
+scanf("%d", &n);
+for(i=0;i<n;i++)
+{
+printf("\nElementul %d =",i);
+scanf("%d",&v[i]);
+}
+print(" \nDati elementul pe care doriti sa il cautati:");
+scanf("%d",&x)
+i=0;
+while (i<n)
+{
+mij=(i+n)/2;
+if (v[mij]==x)
+printf("\nElementul cautat ( %d ) a fost gasit pe pozitia %d",x,mij+1);
+else
+if (v[mij]<x)
+i=mij+1;
+else
+n=mij-1;
+}
+system("pause");
+return 0;
+}
