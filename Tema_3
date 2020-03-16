@@ -1,3 +1,4 @@
+/*
 1. Sa se scrie un program care citeste de la tastura "N" numere naturale. 
 Pentru fiecare numar se va determina forma lui binara, 
 se va calcula inversul binar ,
@@ -6,7 +7,8 @@ Ex:
 27
 0001 1011 
 1110 0100
-228
+228 
+*/
 
 
 
